@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  LatestPostViewController.h
 //  GarnishGuide
 //
 //  Created by Joey Faust on 6/19/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface LatestPostViewController : UIViewController
 
 
 @end

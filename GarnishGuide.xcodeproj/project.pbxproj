@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		A4365EA21B35122300BE1822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA11B35122300BE1822 /* main.m */; };
 		A4365EA51B35122300BE1822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA41B35122300BE1822 /* AppDelegate.m */; };
-		A4365EA81B35122300BE1822 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA71B35122300BE1822 /* FirstViewController.m */; };
-		A4365EAB1B35122300BE1822 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EAA1B35122300BE1822 /* SecondViewController.m */; };
+		A4365EA81B35122300BE1822 /* LatestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA71B35122300BE1822 /* LatestPostViewController.m */; };
+		A4365EAB1B35122300BE1822 /* SpiritListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EAA1B35122300BE1822 /* SpiritListViewController.m */; };
 		A4365EAE1B35122300BE1822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4365EAC1B35122300BE1822 /* Main.storyboard */; };
 		A4365EB01B35122300BE1822 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4365EAF1B35122300BE1822 /* Images.xcassets */; };
 		A4365EB31B35122300BE1822 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4365EB11B35122300BE1822 /* LaunchScreen.xib */; };
 		A4365EBF1B35122300BE1822 /* GarnishGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EBE1B35122300BE1822 /* GarnishGuideTests.m */; };
+		A4613F721B3677520075AD57 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4613F711B3677520075AD57 /* RecipeViewController.m */; };
+		A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */; };
+		A48B3A0D1B35C26800A3D554 /* Spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A0C1B35C26800A3D554 /* Spirit.m */; };
+		A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */; };
+		A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */; };
+		A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6C21B36746E007CD7A2 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +39,28 @@
 		A4365EA11B35122300BE1822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4365EA31B35122300BE1822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4365EA41B35122300BE1822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4365EA61B35122300BE1822 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A4365EA71B35122300BE1822 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A4365EA91B35122300BE1822 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A4365EAA1B35122300BE1822 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A4365EA61B35122300BE1822 /* LatestPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LatestPostViewController.h; path = GarnishGuide/LatestPostViewController.h; sourceTree = "<group>"; };
+		A4365EA71B35122300BE1822 /* LatestPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LatestPostViewController.m; path = GarnishGuide/LatestPostViewController.m; sourceTree = "<group>"; };
+		A4365EA91B35122300BE1822 /* SpiritListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpiritListViewController.h; path = GarnishGuide/SpiritListViewController.h; sourceTree = "<group>"; };
+		A4365EAA1B35122300BE1822 /* SpiritListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpiritListViewController.m; path = GarnishGuide/SpiritListViewController.m; sourceTree = "<group>"; };
 		A4365EAD1B35122300BE1822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4365EAF1B35122300BE1822 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4365EB21B35122300BE1822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A4365EB81B35122300BE1822 /* GarnishGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarnishGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4365EBD1B35122300BE1822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4365EBE1B35122300BE1822 /* GarnishGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GarnishGuideTests.m; sourceTree = "<group>"; };
+		A4613F701B3677520075AD57 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		A4613F711B3677520075AD57 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		A48B3A071B35C1FE00A3D554 /* SpiritSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritSearchTableViewController.h; sourceTree = "<group>"; };
+		A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchTableViewController.m; sourceTree = "<group>"; };
+		A48B3A0B1B35C26800A3D554 /* Spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spirit.h; sourceTree = "<group>"; };
+		A48B3A0C1B35C26800A3D554 /* Spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spirit.m; sourceTree = "<group>"; };
+		A497B6BB1B367394007CD7A2 /* SpiritListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritListViewCell.h; sourceTree = "<group>"; };
+		A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritListViewCell.m; sourceTree = "<group>"; };
+		A497B6BE1B367450007CD7A2 /* SpiritSearchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritSearchViewCell.h; sourceTree = "<group>"; };
+		A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchViewCell.m; sourceTree = "<group>"; };
+		A497B6C11B36746E007CD7A2 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		A497B6C21B36746E007CD7A2 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,9 @@
 		A4365E931B35122300BE1822 = {
 			isa = PBXGroup;
 			children = (
+				A497B6BA1B367361007CD7A2 /* Views */,
+				A48B3A0A1B35C25300A3D554 /* Models */,
+				A48B3A061B35C05D00A3D554 /* ViewControllers */,
 				A4365E9E1B35122300BE1822 /* GarnishGuide */,
 				A4365EBB1B35122300BE1822 /* GarnishGuideTests */,
 				A4365E9D1B35122300BE1822 /* Products */,
@@ -86,10 +107,6 @@
 			children = (
 				A4365EA31B35122300BE1822 /* AppDelegate.h */,
 				A4365EA41B35122300BE1822 /* AppDelegate.m */,
-				A4365EA61B35122300BE1822 /* FirstViewController.h */,
-				A4365EA71B35122300BE1822 /* FirstViewController.m */,
-				A4365EA91B35122300BE1822 /* SecondViewController.h */,
-				A4365EAA1B35122300BE1822 /* SecondViewController.m */,
 				A4365EAC1B35122300BE1822 /* Main.storyboard */,
 				A4365EAF1B35122300BE1822 /* Images.xcassets */,
 				A4365EB11B35122300BE1822 /* LaunchScreen.xib */,
@@ -122,6 +139,43 @@
 				A4365EBD1B35122300BE1822 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A48B3A061B35C05D00A3D554 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4365EA91B35122300BE1822 /* SpiritListViewController.h */,
+				A4365EAA1B35122300BE1822 /* SpiritListViewController.m */,
+				A4365EA61B35122300BE1822 /* LatestPostViewController.h */,
+				A4365EA71B35122300BE1822 /* LatestPostViewController.m */,
+				A48B3A071B35C1FE00A3D554 /* SpiritSearchTableViewController.h */,
+				A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */,
+				A4613F701B3677520075AD57 /* RecipeViewController.h */,
+				A4613F711B3677520075AD57 /* RecipeViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A48B3A0A1B35C25300A3D554 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A48B3A0B1B35C26800A3D554 /* Spirit.h */,
+				A48B3A0C1B35C26800A3D554 /* Spirit.m */,
+				A497B6C11B36746E007CD7A2 /* Recipe.h */,
+				A497B6C21B36746E007CD7A2 /* Recipe.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A497B6BA1B367361007CD7A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A497B6BB1B367394007CD7A2 /* SpiritListViewCell.h */,
+				A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */,
+				A497B6BE1B367450007CD7A2 /* SpiritSearchViewCell.h */,
+				A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4365EAB1B35122300BE1822 /* SecondViewController.m in Sources */,
+				A48B3A0D1B35C26800A3D554 /* Spirit.m in Sources */,
+				A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */,
+				A4365EAB1B35122300BE1822 /* SpiritListViewController.m in Sources */,
 				A4365EA51B35122300BE1822 /* AppDelegate.m in Sources */,
-				A4365EA81B35122300BE1822 /* FirstViewController.m in Sources */,
+				A4613F721B3677520075AD57 /* RecipeViewController.m in Sources */,
+				A4365EA81B35122300BE1822 /* LatestPostViewController.m in Sources */,
+				A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */,
+				A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */,
+				A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */,
 				A4365EA21B35122300BE1822 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -350,8 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GarnishGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -360,8 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GarnishGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -418,6 +482,7 @@
 				A4365EC41B35122300BE1822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4365EC51B35122300BE1822 /* Build configuration list for PBXNativeTarget "GarnishGuideTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +491,7 @@
 				A4365EC71B35122300BE1822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

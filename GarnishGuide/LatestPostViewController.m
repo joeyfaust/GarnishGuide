@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  LatestPostViewController.m
 //  GarnishGuide
 //
 //  Created by Joey Faust on 6/19/15.
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "LatestPostViewController.h"
 
-@interface FirstViewController ()
+@interface LatestPostViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation LatestPostViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

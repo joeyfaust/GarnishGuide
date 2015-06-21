@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SpiritListViewController.h
 //  GarnishGuide
 //
 //  Created by Joey Faust on 6/19/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface SpiritListViewController : UITableViewController
 
 
 @end
