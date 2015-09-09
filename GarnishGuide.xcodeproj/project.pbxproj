@@ -9,18 +9,25 @@
 /* Begin PBXBuildFile section */
 		A4365EA21B35122300BE1822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA11B35122300BE1822 /* main.m */; };
 		A4365EA51B35122300BE1822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA41B35122300BE1822 /* AppDelegate.m */; };
-		A4365EA81B35122300BE1822 /* LatestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EA71B35122300BE1822 /* LatestPostViewController.m */; };
 		A4365EAB1B35122300BE1822 /* SpiritListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EAA1B35122300BE1822 /* SpiritListViewController.m */; };
 		A4365EAE1B35122300BE1822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4365EAC1B35122300BE1822 /* Main.storyboard */; };
 		A4365EB01B35122300BE1822 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4365EAF1B35122300BE1822 /* Images.xcassets */; };
 		A4365EB31B35122300BE1822 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4365EB11B35122300BE1822 /* LaunchScreen.xib */; };
 		A4365EBF1B35122300BE1822 /* GarnishGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4365EBE1B35122300BE1822 /* GarnishGuideTests.m */; };
-		A4613F721B3677520075AD57 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4613F711B3677520075AD57 /* RecipeViewController.m */; };
+		A43E9C361B897CB800092C4B /* RecipeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E9C351B897CB800092C4B /* RecipeHelper.m */; };
+		A44AF96A1B9F115B000979DA /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44AF9691B9F115B000979DA /* RecipeViewController.m */; };
+		A45226831B86DFEE00FB5377 /* ConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A45226821B86DFEE00FB5377 /* ConnectionHelper.m */; };
+		A45226871B86E16700FB5377 /* SpiritHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A45226861B86E16700FB5377 /* SpiritHelper.m */; };
+		A45226891B86E69000FB5377 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45226881B86E69000FB5377 /* Settings.plist */; };
+		A456CA441B8F481A00E416A1 /* RecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A456CA431B8F481A00E416A1 /* RecipeView.m */; };
+		A45E5FB61B8CA539001B5ADA /* Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A45E5FB51B8CA539001B5ADA /* Properties.m */; };
+		A4613F721B3677520075AD57 /* LatestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4613F711B3677520075AD57 /* LatestViewController.m */; };
 		A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */; };
 		A48B3A0D1B35C26800A3D554 /* Spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A0C1B35C26800A3D554 /* Spirit.m */; };
 		A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */; };
 		A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */; };
 		A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6C21B36746E007CD7A2 /* Recipe.m */; };
+		A4E99DFC1B8C9F0F00C02084 /* PropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E99DFB1B8C9F0F00C02084 /* PropertyHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		A4365EA11B35122300BE1822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4365EA31B35122300BE1822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4365EA41B35122300BE1822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4365EA61B35122300BE1822 /* LatestPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LatestPostViewController.h; path = GarnishGuide/LatestPostViewController.h; sourceTree = "<group>"; };
-		A4365EA71B35122300BE1822 /* LatestPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LatestPostViewController.m; path = GarnishGuide/LatestPostViewController.m; sourceTree = "<group>"; };
 		A4365EA91B35122300BE1822 /* SpiritListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpiritListViewController.h; path = GarnishGuide/SpiritListViewController.h; sourceTree = "<group>"; };
 		A4365EAA1B35122300BE1822 /* SpiritListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpiritListViewController.m; path = GarnishGuide/SpiritListViewController.m; sourceTree = "<group>"; };
 		A4365EAD1B35122300BE1822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,8 +54,22 @@
 		A4365EB81B35122300BE1822 /* GarnishGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarnishGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4365EBD1B35122300BE1822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4365EBE1B35122300BE1822 /* GarnishGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GarnishGuideTests.m; sourceTree = "<group>"; };
-		A4613F701B3677520075AD57 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
-		A4613F711B3677520075AD57 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		A43E9C341B897CB800092C4B /* RecipeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeHelper.h; sourceTree = "<group>"; };
+		A43E9C351B897CB800092C4B /* RecipeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeHelper.m; sourceTree = "<group>"; };
+		A44AF9681B9F115B000979DA /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		A44AF9691B9F115B000979DA /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		A45226811B86DFEE00FB5377 /* ConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHelper.h; sourceTree = "<group>"; };
+		A45226821B86DFEE00FB5377 /* ConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHelper.m; sourceTree = "<group>"; };
+		A45226851B86E16700FB5377 /* SpiritHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritHelper.h; sourceTree = "<group>"; };
+		A45226861B86E16700FB5377 /* SpiritHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritHelper.m; sourceTree = "<group>"; };
+		A45226881B86E69000FB5377 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		A456CA421B8F481A00E416A1 /* RecipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeView.h; sourceTree = "<group>"; };
+		A456CA431B8F481A00E416A1 /* RecipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeView.m; sourceTree = "<group>"; };
+		A45E5FB31B8CA234001B5ADA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A45E5FB41B8CA539001B5ADA /* Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
+		A45E5FB51B8CA539001B5ADA /* Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
+		A4613F701B3677520075AD57 /* LatestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestViewController.h; sourceTree = "<group>"; };
+		A4613F711B3677520075AD57 /* LatestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestViewController.m; sourceTree = "<group>"; };
 		A48B3A071B35C1FE00A3D554 /* SpiritSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritSearchTableViewController.h; sourceTree = "<group>"; };
 		A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchTableViewController.m; sourceTree = "<group>"; };
 		A48B3A0B1B35C26800A3D554 /* Spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spirit.h; sourceTree = "<group>"; };
@@ -61,6 +80,8 @@
 		A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchViewCell.m; sourceTree = "<group>"; };
 		A497B6C11B36746E007CD7A2 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		A497B6C21B36746E007CD7A2 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		A4E99DFA1B8C9F0F00C02084 /* PropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyHelper.h; sourceTree = "<group>"; };
+		A4E99DFB1B8C9F0F00C02084 /* PropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +105,8 @@
 		A4365E931B35122300BE1822 = {
 			isa = PBXGroup;
 			children = (
+				A45226841B86E15A00FB5377 /* ModelHelpers */,
+				A45226801B86DFD200FB5377 /* Utilities */,
 				A497B6BA1B367361007CD7A2 /* Views */,
 				A48B3A0A1B35C25300A3D554 /* Models */,
 				A48B3A061B35C05D00A3D554 /* ViewControllers */,
@@ -120,6 +143,10 @@
 			children = (
 				A4365EA01B35122300BE1822 /* Info.plist */,
 				A4365EA11B35122300BE1822 /* main.m */,
+				A45226881B86E69000FB5377 /* Settings.plist */,
+				A45E5FB31B8CA234001B5ADA /* PrefixHeader.pch */,
+				A45E5FB41B8CA539001B5ADA /* Properties.h */,
+				A45E5FB51B8CA539001B5ADA /* Properties.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,17 +168,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A45226801B86DFD200FB5377 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A45226811B86DFEE00FB5377 /* ConnectionHelper.h */,
+				A45226821B86DFEE00FB5377 /* ConnectionHelper.m */,
+				A4E99DFA1B8C9F0F00C02084 /* PropertyHelper.h */,
+				A4E99DFB1B8C9F0F00C02084 /* PropertyHelper.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		A45226841B86E15A00FB5377 /* ModelHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A45226851B86E16700FB5377 /* SpiritHelper.h */,
+				A45226861B86E16700FB5377 /* SpiritHelper.m */,
+				A43E9C341B897CB800092C4B /* RecipeHelper.h */,
+				A43E9C351B897CB800092C4B /* RecipeHelper.m */,
+			);
+			name = ModelHelpers;
+			sourceTree = "<group>";
+		};
 		A48B3A061B35C05D00A3D554 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A4365EA91B35122300BE1822 /* SpiritListViewController.h */,
 				A4365EAA1B35122300BE1822 /* SpiritListViewController.m */,
-				A4365EA61B35122300BE1822 /* LatestPostViewController.h */,
-				A4365EA71B35122300BE1822 /* LatestPostViewController.m */,
 				A48B3A071B35C1FE00A3D554 /* SpiritSearchTableViewController.h */,
 				A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */,
-				A4613F701B3677520075AD57 /* RecipeViewController.h */,
-				A4613F711B3677520075AD57 /* RecipeViewController.m */,
+				A4613F701B3677520075AD57 /* LatestViewController.h */,
+				A4613F711B3677520075AD57 /* LatestViewController.m */,
+				A44AF9681B9F115B000979DA /* RecipeViewController.h */,
+				A44AF9691B9F115B000979DA /* RecipeViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -174,6 +223,8 @@
 				A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */,
 				A497B6BE1B367450007CD7A2 /* SpiritSearchViewCell.h */,
 				A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */,
+				A456CA421B8F481A00E416A1 /* RecipeView.h */,
+				A456CA431B8F481A00E416A1 /* RecipeView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -259,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4365EAE1B35122300BE1822 /* Main.storyboard in Resources */,
+				A45226891B86E69000FB5377 /* Settings.plist in Resources */,
 				A4365EB31B35122300BE1822 /* LaunchScreen.xib in Resources */,
 				A4365EB01B35122300BE1822 /* Images.xcassets in Resources */,
 			);
@@ -282,9 +334,15 @@
 				A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */,
 				A4365EAB1B35122300BE1822 /* SpiritListViewController.m in Sources */,
 				A4365EA51B35122300BE1822 /* AppDelegate.m in Sources */,
-				A4613F721B3677520075AD57 /* RecipeViewController.m in Sources */,
-				A4365EA81B35122300BE1822 /* LatestPostViewController.m in Sources */,
+				A4613F721B3677520075AD57 /* LatestViewController.m in Sources */,
+				A43E9C361B897CB800092C4B /* RecipeHelper.m in Sources */,
 				A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */,
+				A45E5FB61B8CA539001B5ADA /* Properties.m in Sources */,
+				A44AF96A1B9F115B000979DA /* RecipeViewController.m in Sources */,
+				A45226831B86DFEE00FB5377 /* ConnectionHelper.m in Sources */,
+				A456CA441B8F481A00E416A1 /* RecipeView.m in Sources */,
+				A45226871B86E16700FB5377 /* SpiritHelper.m in Sources */,
+				A4E99DFC1B8C9F0F00C02084 /* PropertyHelper.m in Sources */,
 				A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */,
 				A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */,
 				A4365EA21B35122300BE1822 /* main.m in Sources */,
@@ -352,6 +410,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = GarnishGuide/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -392,6 +451,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = GarnishGuide/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

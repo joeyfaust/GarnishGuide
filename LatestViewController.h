@@ -2,14 +2,14 @@
 //  RecipeViewController.h
 //  GarnishGuide
 //
-//  Created by Joey Faust on 9/8/15.
+//  Created by Joey Faust on 6/20/15.
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
 
-@interface RecipeViewController : UIViewController
+@interface LatestViewController : UIViewController
 
 -(void)setRecipe:(Recipe*) recipe;
 

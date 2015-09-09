@@ -10,6 +10,13 @@
 
 @interface Recipe : NSObject
 
+@property (nonatomic,strong) NSString* postId;
 @property (nonatomic,strong) NSString* name;
+@property (nonatomic,strong) UIImage* image;
+@property (nonatomic,strong) NSArray* tags;
+@property (nonatomic,strong) NSString* recipe;
+@property (nonatomic,strong) NSString* imageURI;
+
+-(Recipe*) initFromDictionary:(NSDictionary*) dictionary;
 
 @end

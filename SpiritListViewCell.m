@@ -10,7 +10,7 @@
 
 @interface SpiritListViewCell()
 
-@property (nonatomic,strong) IBOutlet UILabel* nameLabel;
+@property (nonatomic,strong) IBOutlet UIImageView* spiritListImageView;
 
 @end
 
@@ -22,7 +22,9 @@
 
 - (void)setSpirit:(Spirit *)spirit {
     _spirit = spirit;
-    self.nameLabel.text = self.spirit.name;
+    if(spirit) {
+        [self.spiritListImageView setImage:self.spirit.image];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

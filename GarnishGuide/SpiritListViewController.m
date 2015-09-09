@@ -10,9 +10,11 @@
 #import "Spirit.h"
 #import "SpiritListViewCell.h"
 #import "SpiritSearchTableViewController.h"
+#import "SpiritHelper.h"
 
-@interface SpiritListViewController () <UITableViewDataSource,UITableViewDelegate>
+@interface SpiritListViewController () <UITableViewDataSource,UITableViewDelegate,SpiritLoadedDelegate>
 
+@property (nonatomic,strong) SpiritHelper* helper;
 @property (nonatomic,strong) NSArray* spiritList;
 
 @end
@@ -22,7 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.spiritList = [Spirit generateSpiritList];
+    self.helper = [[SpiritHelper alloc] initWithConfigs];
+    self.helper.delegate = self;
+    self.spiritList = [self.helper getSpiritList];
+    [self.helper loadSpiritImages:self.spiritList];
 }
 
 #pragma mark - Table view data source
@@ -45,6 +50,18 @@
     SpiritListViewCell* cell = sender;
     
     destViewController.spirit = cell.spirit;
+}
+
+#pragma mark - Spirit Loaded Delegate
+
+
+- (void)spiritImageLoaded:(Spirit *)spirit {
+    NSInteger index = [self.spiritList indexOfObject:spirit];
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    SpiritListViewCell* cell = (SpiritListViewCell*)[self.tableView cellForRowAtIndexPath:indexPath];
+    if(cell) {
+        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 

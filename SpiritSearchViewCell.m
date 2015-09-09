@@ -8,6 +8,12 @@
 
 #import "SpiritSearchViewCell.h"
 
+@interface SpiritSearchViewCell()
+
+@property (nonatomic,strong) IBOutlet UILabel* label;
+
+@end
+
 @implementation SpiritSearchViewCell
 
 - (void)awakeFromNib {
@@ -18,6 +24,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void) setRecipe:(Recipe *)recipe {
+    _recipe = recipe;
+    if(_recipe) {
+        [self.label setText:self.recipe.name];
+    }
 }
 
 @end

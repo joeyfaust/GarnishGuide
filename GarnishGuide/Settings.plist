@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blog-url</key>
+	<string>https://www.googleapis.com/blogger/v3/blogs/%@?key=%@</string>
+	<key>posts-url-latest</key>
+	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts?maxResults=%@&amp;key=%@</string>
+	<key>posts-url-query</key>
+	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts/search?q=%@&amp;key=%@</string>
+	<key>query-label</key>
+	<string>label:</string>
+	<key>query-and-delim</key>
+	<string>+</string>
+	<key>query-or-delim</key>
+	<string>|</string>
+	<key>post-url</key>
+	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts/%@?key=%@</string>
+	<key>blog-id</key>
+	<string>3100532328371583686</string>
+	<key>api-key</key>
+	<string>AIzaSyAnn-UogKj9HUh28MzVpMpXgNQnCHXg-7w</string>
+	<key>spirits</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Gin</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/O93FWXI.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rum</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/EPUw5j3.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tequila</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/JRkhJ3K.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Vodka</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/QfQOPJr.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Whisky</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/EIxexbI.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Other</string>
+			<key>image-url</key>
+			<string>http://i.imgur.com/3FEkYkV.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

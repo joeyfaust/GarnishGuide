@@ -11,8 +11,9 @@
 @interface Spirit : NSObject
 
 @property (nonatomic,strong) NSString* name;
+@property (nonatomic,strong) NSString* imageUri;
+@property (nonatomic,strong) UIImage* image;
 
-+ (NSArray*) generateSpiritList;
-+ (Spirit*) initWithName:(NSString*)name;
+- (Spirit*) initWithName:(NSString*)name andImageUri:(NSString*) imageUri;
 
 @end

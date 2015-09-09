@@ -2,25 +2,24 @@
 //  RecipeViewController.m
 //  GarnishGuide
 //
-//  Created by Joey Faust on 9/8/15.
+//  Created by Joey Faust on 6/20/15.
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
-#import "RecipeViewController.h"
+#import "LatestViewController.h"
 #import "Recipe.h"
 #import "RecipeHelper.h"
 #import "RecipeView.h"
 
-@interface RecipeViewController () <UIScrollViewDelegate,RecipeLoadedDelegate>
+@interface LatestViewController () <UIScrollViewDelegate,RecipeLoadedDelegate>
 
 @property (nonatomic,strong) IBOutlet RecipeView* recipeView;
-@property (nonatomic,strong) Recipe* recipe;
 
 @property (nonatomic,strong) RecipeHelper* helper;
 
 @end
 
-@implementation RecipeViewController
+@implementation LatestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,16 +27,14 @@
     self.helper = [[RecipeHelper alloc] initWithConfigs];
     self.helper.delegate = self;
     
-    if (self.recipe && !self.recipeView.recipe) {
-        self.recipeView.recipe = self.recipe;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.recipeView setText];
-        });
-    }
-    
-    if (self.recipeView.recipe) {
-        [self.helper loadRecipeImage:self.recipeView.recipe];
-    }
+    [self.helper getLatestRecipe:^(Recipe * latestRecipe, NSError * error) {
+        if(latestRecipe) {
+            self.recipeView.recipe = latestRecipe;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.recipeView setText];
+            });
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,23 +43,19 @@
 }
 
 -(void) setRecipe:(Recipe *)recipe {
-    if (self.recipeView) {
-        self.recipeView.recipe = recipe;
-    }
-    
-    _recipe = recipe;
+    self.recipeView.recipe = recipe;
 }
 
 #pragma mark - UIScrollViewDelegate
 /*
  -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
- 
- }
- 
- -(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
- 
- }
- */
+    
+}
+
+-(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
+    
+}
+*/
 
 #pragma mark - RecipeLoadedDelegate
 
