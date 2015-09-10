@@ -104,4 +104,8 @@
     return content;
 }
 
+-(NSString *)description {
+    return self.name;
+}
+
 @end

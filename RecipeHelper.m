@@ -8,10 +8,12 @@
 
 #import "RecipeHelper.h"
 #import "Recipe.h"
+#import "Ingredient.h"
 #import "ConnectionHelper.h"
 
 @interface RecipeHelper()
 -(void) getSomeRecipes: (NSInteger)num completion:(void(^)(NSArray*,NSError*)) completion;
+-(void) getRecipesForQuery: (NSString*) queryString completion:(void(^)(NSArray*,NSError*)) completion;
 
 @property (nonatomic,strong) NSDictionary* properties;
 @end
@@ -38,10 +40,8 @@
     }];
 }
 
--(void) getAllRecipesForSpirit:(Spirit *)spirit completion:(void (^)(NSArray *, NSError *))completion {
+-(void)getRecipesForQuery:(NSString *)queryString completion:(void (^)(NSArray *, NSError *))completion {
     ConnectionHelper* connectionHelper = [ConnectionHelper mainConnectionHelper];
-    NSString* queryString = self.properties[@"query-label"];
-    queryString = [queryString stringByAppendingString:spirit.name];
     NSString* fullUrl = [NSString stringWithFormat:
                          self.properties[@"posts-url-query"],
                          self.properties[@"blog-id"],
@@ -54,6 +54,23 @@
             Recipe* recipe = [[Recipe alloc] initFromDictionary:post];
             [recipes addObject:recipe];
         }
+        completion(recipes,error);
+    }];
+}
+
+-(void) getAllRecipesForSpirit:(Spirit *)spirit completion:(void (^)(NSArray *, NSError *))completion {
+    NSString* queryString = self.properties[@"query-label"];
+    queryString = [queryString stringByAppendingString:spirit.name];
+    [self getRecipesForQuery:queryString completion:^(NSArray * recipes, NSError * error) {
+        completion(recipes,error);
+    }];
+}
+
+-(void)getRecipesForIngredient:(NSArray *)ingredientList completion:(void (^)(NSArray *, NSError *))completion {
+    NSString* queryString = self.properties[@"query-label"];
+    NSString* queryAnd = self.properties[@"query-and-delim"];
+    queryString = [queryString stringByAppendingString:[ingredientList componentsJoinedByString:queryAnd]];
+    [self getRecipesForQuery:queryString completion:^(NSArray * recipes, NSError * error) {
         completion(recipes,error);
     }];
 }

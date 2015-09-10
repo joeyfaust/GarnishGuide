@@ -8,6 +8,8 @@
 	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts?maxResults=%@&amp;key=%@</string>
 	<key>posts-url-query</key>
 	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts/search?q=%@&amp;key=%@</string>
+	<key>posts-url-labels</key>
+	<string>https://www.googleapis.com/blogger/v3/blogs/%@/posts?fields=nextPageToken,items(labels)&amp;maxResults=500&amp;key=%@</string>
 	<key>query-label</key>
 	<string>label:</string>
 	<key>query-and-delim</key>

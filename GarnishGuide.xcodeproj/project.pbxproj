@@ -20,10 +20,16 @@
 		A45226871B86E16700FB5377 /* SpiritHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A45226861B86E16700FB5377 /* SpiritHelper.m */; };
 		A45226891B86E69000FB5377 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45226881B86E69000FB5377 /* Settings.plist */; };
 		A456CA441B8F481A00E416A1 /* RecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A456CA431B8F481A00E416A1 /* RecipeView.m */; };
+		A45987621BA1320500CB33CF /* IngredientSearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A45987611BA1320500CB33CF /* IngredientSearchViewCell.m */; };
 		A45E5FB61B8CA539001B5ADA /* Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A45E5FB51B8CA539001B5ADA /* Properties.m */; };
 		A4613F721B3677520075AD57 /* LatestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4613F711B3677520075AD57 /* LatestViewController.m */; };
 		A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */; };
 		A48B3A0D1B35C26800A3D554 /* Spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B3A0C1B35C26800A3D554 /* Spirit.m */; };
+		A49084341B9FFC9E00578242 /* IngredientsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49084331B9FFC9E00578242 /* IngredientsListViewController.m */; };
+		A49084371B9FFDE400578242 /* IngredientsListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A49084361B9FFDE400578242 /* IngredientsListViewCell.m */; };
+		A490843A1B9FFE1400578242 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = A49084391B9FFE1400578242 /* Ingredient.m */; };
+		A490843D1B9FFEFC00578242 /* IngredientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A490843C1B9FFEFC00578242 /* IngredientHelper.m */; };
+		A49193121BA06B93003B9C3E /* IngredientSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49193111BA06B93003B9C3E /* IngredientSearchTableViewController.m */; };
 		A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */; };
 		A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */; };
 		A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6C21B36746E007CD7A2 /* Recipe.m */; };
@@ -65,6 +71,8 @@
 		A45226881B86E69000FB5377 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		A456CA421B8F481A00E416A1 /* RecipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeView.h; sourceTree = "<group>"; };
 		A456CA431B8F481A00E416A1 /* RecipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeView.m; sourceTree = "<group>"; };
+		A45987601BA1320500CB33CF /* IngredientSearchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientSearchViewCell.h; sourceTree = "<group>"; };
+		A45987611BA1320500CB33CF /* IngredientSearchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientSearchViewCell.m; sourceTree = "<group>"; };
 		A45E5FB31B8CA234001B5ADA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A45E5FB41B8CA539001B5ADA /* Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
 		A45E5FB51B8CA539001B5ADA /* Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
@@ -74,6 +82,16 @@
 		A48B3A081B35C1FE00A3D554 /* SpiritSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchTableViewController.m; sourceTree = "<group>"; };
 		A48B3A0B1B35C26800A3D554 /* Spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spirit.h; sourceTree = "<group>"; };
 		A48B3A0C1B35C26800A3D554 /* Spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spirit.m; sourceTree = "<group>"; };
+		A49084321B9FFC9E00578242 /* IngredientsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientsListViewController.h; sourceTree = "<group>"; };
+		A49084331B9FFC9E00578242 /* IngredientsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientsListViewController.m; sourceTree = "<group>"; };
+		A49084351B9FFDE400578242 /* IngredientsListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientsListViewCell.h; sourceTree = "<group>"; };
+		A49084361B9FFDE400578242 /* IngredientsListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientsListViewCell.m; sourceTree = "<group>"; };
+		A49084381B9FFE1400578242 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		A49084391B9FFE1400578242 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		A490843B1B9FFEFC00578242 /* IngredientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientHelper.h; sourceTree = "<group>"; };
+		A490843C1B9FFEFC00578242 /* IngredientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientHelper.m; sourceTree = "<group>"; };
+		A49193101BA06B93003B9C3E /* IngredientSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientSearchTableViewController.h; sourceTree = "<group>"; };
+		A49193111BA06B93003B9C3E /* IngredientSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientSearchTableViewController.m; sourceTree = "<group>"; };
 		A497B6BB1B367394007CD7A2 /* SpiritListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritListViewCell.h; sourceTree = "<group>"; };
 		A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritListViewCell.m; sourceTree = "<group>"; };
 		A497B6BE1B367450007CD7A2 /* SpiritSearchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritSearchViewCell.h; sourceTree = "<group>"; };
@@ -186,6 +204,8 @@
 				A45226861B86E16700FB5377 /* SpiritHelper.m */,
 				A43E9C341B897CB800092C4B /* RecipeHelper.h */,
 				A43E9C351B897CB800092C4B /* RecipeHelper.m */,
+				A490843B1B9FFEFC00578242 /* IngredientHelper.h */,
+				A490843C1B9FFEFC00578242 /* IngredientHelper.m */,
 			);
 			name = ModelHelpers;
 			sourceTree = "<group>";
@@ -201,6 +221,10 @@
 				A4613F711B3677520075AD57 /* LatestViewController.m */,
 				A44AF9681B9F115B000979DA /* RecipeViewController.h */,
 				A44AF9691B9F115B000979DA /* RecipeViewController.m */,
+				A49084321B9FFC9E00578242 /* IngredientsListViewController.h */,
+				A49084331B9FFC9E00578242 /* IngredientsListViewController.m */,
+				A49193101BA06B93003B9C3E /* IngredientSearchTableViewController.h */,
+				A49193111BA06B93003B9C3E /* IngredientSearchTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -212,6 +236,8 @@
 				A48B3A0C1B35C26800A3D554 /* Spirit.m */,
 				A497B6C11B36746E007CD7A2 /* Recipe.h */,
 				A497B6C21B36746E007CD7A2 /* Recipe.m */,
+				A49084381B9FFE1400578242 /* Ingredient.h */,
+				A49084391B9FFE1400578242 /* Ingredient.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -225,6 +251,10 @@
 				A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */,
 				A456CA421B8F481A00E416A1 /* RecipeView.h */,
 				A456CA431B8F481A00E416A1 /* RecipeView.m */,
+				A49084351B9FFDE400578242 /* IngredientsListViewCell.h */,
+				A49084361B9FFDE400578242 /* IngredientsListViewCell.m */,
+				A45987601BA1320500CB33CF /* IngredientSearchViewCell.h */,
+				A45987611BA1320500CB33CF /* IngredientSearchViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -333,14 +363,20 @@
 				A48B3A0D1B35C26800A3D554 /* Spirit.m in Sources */,
 				A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */,
 				A4365EAB1B35122300BE1822 /* SpiritListViewController.m in Sources */,
+				A49084371B9FFDE400578242 /* IngredientsListViewCell.m in Sources */,
 				A4365EA51B35122300BE1822 /* AppDelegate.m in Sources */,
 				A4613F721B3677520075AD57 /* LatestViewController.m in Sources */,
 				A43E9C361B897CB800092C4B /* RecipeHelper.m in Sources */,
+				A45987621BA1320500CB33CF /* IngredientSearchViewCell.m in Sources */,
 				A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */,
 				A45E5FB61B8CA539001B5ADA /* Properties.m in Sources */,
+				A49084341B9FFC9E00578242 /* IngredientsListViewController.m in Sources */,
 				A44AF96A1B9F115B000979DA /* RecipeViewController.m in Sources */,
+				A490843A1B9FFE1400578242 /* Ingredient.m in Sources */,
 				A45226831B86DFEE00FB5377 /* ConnectionHelper.m in Sources */,
+				A49193121BA06B93003B9C3E /* IngredientSearchTableViewController.m in Sources */,
 				A456CA441B8F481A00E416A1 /* RecipeView.m in Sources */,
+				A490843D1B9FFEFC00578242 /* IngredientHelper.m in Sources */,
 				A45226871B86E16700FB5377 /* SpiritHelper.m in Sources */,
 				A4E99DFC1B8C9F0F00C02084 /* PropertyHelper.m in Sources */,
 				A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */,
