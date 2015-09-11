@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
-#import "IngredientsListViewCell.h"
+#import "IngredientListViewCell.h"
 
-@interface IngredientsListViewCell()
+@interface IngredientListViewCell()
 
 @property (nonatomic,strong) IBOutlet UILabel* label;
 
 @end
 
-@implementation IngredientsListViewCell
+@implementation IngredientListViewCell
 
 - (void)awakeFromNib {
     // Initialization code

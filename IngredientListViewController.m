@@ -6,20 +6,21 @@
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
-#import "IngredientsListViewController.h"
-#import "IngredientsListViewCell.h"
+#import "IngredientListViewController.h"
+#import "IngredientListViewCell.h"
 #import "IngredientHelper.h"
 #import "IngredientSearchTableViewController.h"
 
-@interface IngredientsListViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface IngredientListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic,strong) IBOutlet UIButton* searchButton;
 @property (nonatomic,strong) NSArray* ingredientList;
 @property (nonatomic,strong) IngredientHelper* helper;
+@property (nonatomic,strong) IBOutlet UITableView* tableView;
 
 @end
 
-@implementation IngredientsListViewController
+@implementation IngredientListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +28,12 @@
     self.tableView.allowsMultipleSelection = YES;
     
     self.helper = [[IngredientHelper alloc] initWithConfigs];
-    self.ingredientList = [self.helper getFullIngredientList];
+    [self.helper getFullIngredientList:^(NSArray * ingredients, NSError * error) {
+        self.ingredientList = ingredients;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
 }
 
 #pragma mark - Table view data source
@@ -39,35 +45,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    IngredientsListViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    IngredientListViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     Ingredient* ingredient = self.ingredientList[indexPath.row];
     [cell setIngredient:ingredient];
-    
-    if(ingredient.selected) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    IngredientsListViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
     Ingredient* ingredient = self.ingredientList[indexPath.row];
     ingredient.selected = YES;
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    IngredientsListViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
     Ingredient* ingredient = self.ingredientList[indexPath.row];
     ingredient.selected = NO;
-    cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
 #pragma mark - Navigation

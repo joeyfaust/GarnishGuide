@@ -13,4 +13,6 @@ NSString* const LIST_ITEMS = @"items";
 NSString* const POST_ID = @"id";
 NSString* const POST_CONTENT = @"content";
 NSString* const POST_NAME = @"title";
+NSString* const NEXT_PAGE_TOKEN = @"nextPageToken";
+NSString* const LIST_LABELS = @"labels";
 

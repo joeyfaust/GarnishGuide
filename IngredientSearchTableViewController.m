@@ -9,6 +9,7 @@
 #import "IngredientSearchTableViewController.h"
 #import "IngredientSearchViewCell.h"
 #import "RecipeHelper.h"
+#import "RecipeViewController.h"
 
 @interface IngredientSearchTableViewController ()
 
@@ -50,14 +51,15 @@
     return cell;
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    RecipeViewController* destViewController = [segue destinationViewController];
+    IngredientSearchViewCell* cell = sender;
+    [destViewController setRecipe:cell.recipe];
+    destViewController.title = cell.recipe.name;
 }
-*/
+
 
 @end

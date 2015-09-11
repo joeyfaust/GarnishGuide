@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IngredientsListViewController : UITableViewController
+@interface IngredientListViewController : UIViewController
 
 @end

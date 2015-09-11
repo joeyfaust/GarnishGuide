@@ -47,6 +47,7 @@
                          self.properties[@"blog-id"],
                          queryString,
                          self.properties[@"api-key"]];
+    fullUrl = [fullUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [connectionHelper getJSONAsync:fullUrl completion:^(NSDictionary * postsDictionary, NSError * error) {
         NSArray* posts = postsDictionary[LIST_ITEMS];
         NSMutableArray* recipes = [[NSMutableArray alloc] initWithCapacity:[posts count]];
@@ -69,7 +70,15 @@
 -(void)getRecipesForIngredient:(NSArray *)ingredientList completion:(void (^)(NSArray *, NSError *))completion {
     NSString* queryString = self.properties[@"query-label"];
     NSString* queryAnd = self.properties[@"query-and-delim"];
-    queryString = [queryString stringByAppendingString:[ingredientList componentsJoinedByString:queryAnd]];
+    
+    // When there are spaces, query only works with quotes around string
+    NSMutableArray* quotedIngredientList = [[NSMutableArray alloc] initWithCapacity:[ingredientList count]];
+    NSString* quotes = @"\"%@\"";
+    for(NSString* ingredient in ingredientList) {
+        [quotedIngredientList addObject:[NSString stringWithFormat:quotes,ingredient]];
+    }
+    
+    queryString = [queryString stringByAppendingString:[quotedIngredientList componentsJoinedByString:queryAnd]];
     [self getRecipesForQuery:queryString completion:^(NSArray * recipes, NSError * error) {
         completion(recipes,error);
     }];

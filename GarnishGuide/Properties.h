@@ -13,3 +13,5 @@ extern NSString* const LIST_ITEMS;
 extern NSString* const POST_ID;
 extern NSString* const POST_CONTENT;
 extern NSString* const POST_NAME;
+extern NSString* const NEXT_PAGE_TOKEN;
+extern NSString* const LIST_LABELS;

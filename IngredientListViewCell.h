@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Ingredient.h"
 
-@interface IngredientsListViewCell : UITableViewCell
+@interface IngredientListViewCell : UITableViewCell
 
 @property (nonatomic,strong) Ingredient* ingredient;
 
