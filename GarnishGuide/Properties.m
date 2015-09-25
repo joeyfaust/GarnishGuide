@@ -15,4 +15,5 @@ NSString* const POST_CONTENT = @"content";
 NSString* const POST_NAME = @"title";
 NSString* const NEXT_PAGE_TOKEN = @"nextPageToken";
 NSString* const LIST_LABELS = @"labels";
+NSString* const BAR_TEMP_FILE = @"bar.plist";
 

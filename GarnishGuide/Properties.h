@@ -15,3 +15,4 @@ extern NSString* const POST_CONTENT;
 extern NSString* const POST_NAME;
 extern NSString* const NEXT_PAGE_TOKEN;
 extern NSString* const LIST_LABELS;
+extern NSString* const BAR_TEMP_FILE;

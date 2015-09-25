@@ -1,25 +1,28 @@
 //
-//  IngredientsListViewController.m
+//  BarListViewController.m
 //  GarnishGuide
 //
-//  Created by Joey Faust on 9/8/15.
+//  Created by Joey Faust on 9/25/15.
 //  Copyright (c) 2015 Garnish Girl. All rights reserved.
 //
 
-#import "IngredientListViewController.h"
-#import "IngredientListViewCell.h"
+#import "BarListViewController.h"
 #import "IngredientHelper.h"
-#import "IngredientSearchTableViewController.h"
+#import "IngredientListViewCell.h"
+#import "BarSearchTableViewController.h"
 
-@interface IngredientListViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface BarListViewController () <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic,strong) NSArray* ingredientList;
 @property (nonatomic,strong) IngredientHelper* helper;
 @property (nonatomic,strong) IBOutlet UITableView* tableView;
 
+@property (nonatomic,strong) NSString* libraryPath;
+
 @end
 
-@implementation IngredientListViewController
+@implementation BarListViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,12 +36,29 @@
             [self.tableView reloadData];
         });
     }];
+    
+    // Retrieve ingredientList, if it exists
+    NSString* libraryDir = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    self.libraryPath = [libraryDir stringByAppendingPathComponent:BAR_TEMP_FILE];
+    NSArray* selectedIngredients = [[NSArray alloc] init];
+    if([[NSFileManager defaultManager] fileExistsAtPath:self.libraryPath]) {
+        selectedIngredients = [NSKeyedUnarchiver unarchiveObjectWithFile:self.libraryPath];
+    }
+    
+    // Select ingredients in list based on file
+    for(Ingredient* ingredient in self.ingredientList) {
+        if([selectedIngredients containsObject:ingredient]) {
+            ingredient.selected = YES;
+            NSInteger index = [self.ingredientList indexOfObject:ingredient];
+            [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
+        }
+    }
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+    
     return [self.ingredientList count];
     
 }
@@ -65,7 +85,7 @@
 #pragma mark - Navigation
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    IngredientSearchTableViewController* destViewController = [segue destinationViewController];
+    BarSearchTableViewController* destViewController = [segue destinationViewController];
     
     NSMutableArray* filteredIngredientList = [[NSMutableArray alloc] init];
     for (Ingredient* ingredient in self.ingredientList) {
@@ -74,7 +94,22 @@
         }
     }
     
+    // Write bar list to disk
+    [NSKeyedArchiver archiveRootObject:filteredIngredientList toFile:self.libraryPath];
+    
     destViewController.ingredientList = filteredIngredientList;
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    NSMutableArray* filteredIngredientList = [[NSMutableArray alloc] init];
+    for (Ingredient* ingredient in self.ingredientList) {
+        if (ingredient.selected) {
+            [filteredIngredientList addObject:ingredient];
+        }
+    }
+    
+    // Write bar list to disk
+    [NSKeyedArchiver archiveRootObject:filteredIngredientList toFile:self.libraryPath];
 }
 
 @end

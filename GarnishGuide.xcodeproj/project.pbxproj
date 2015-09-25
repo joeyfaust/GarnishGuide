@@ -33,6 +33,8 @@
 		A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BC1B367394007CD7A2 /* SpiritListViewCell.m */; };
 		A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */; };
 		A497B6C31B36746E007CD7A2 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = A497B6C21B36746E007CD7A2 /* Recipe.m */; };
+		A4A7555C1BB541410068F4A3 /* BarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A7555B1BB541410068F4A3 /* BarListViewController.m */; };
+		A4A755621BB543770068F4A3 /* BarSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A755611BB543770068F4A3 /* BarSearchTableViewController.m */; };
 		A4E99DFC1B8C9F0F00C02084 /* PropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E99DFB1B8C9F0F00C02084 /* PropertyHelper.m */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,10 @@
 		A497B6BF1B367450007CD7A2 /* SpiritSearchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritSearchViewCell.m; sourceTree = "<group>"; };
 		A497B6C11B36746E007CD7A2 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		A497B6C21B36746E007CD7A2 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		A4A7555A1BB541410068F4A3 /* BarListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarListViewController.h; sourceTree = "<group>"; };
+		A4A7555B1BB541410068F4A3 /* BarListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarListViewController.m; sourceTree = "<group>"; };
+		A4A755601BB543770068F4A3 /* BarSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarSearchTableViewController.h; sourceTree = "<group>"; };
+		A4A755611BB543770068F4A3 /* BarSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarSearchTableViewController.m; sourceTree = "<group>"; };
 		A4E99DFA1B8C9F0F00C02084 /* PropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyHelper.h; sourceTree = "<group>"; };
 		A4E99DFB1B8C9F0F00C02084 /* PropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +231,10 @@
 				A49084331B9FFC9E00578242 /* IngredientListViewController.m */,
 				A49193101BA06B93003B9C3E /* IngredientSearchTableViewController.h */,
 				A49193111BA06B93003B9C3E /* IngredientSearchTableViewController.m */,
+				A4A7555A1BB541410068F4A3 /* BarListViewController.h */,
+				A4A7555B1BB541410068F4A3 /* BarListViewController.m */,
+				A4A755601BB543770068F4A3 /* BarSearchTableViewController.h */,
+				A4A755611BB543770068F4A3 /* BarSearchTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -371,6 +381,7 @@
 				A497B6BD1B367394007CD7A2 /* SpiritListViewCell.m in Sources */,
 				A45E5FB61B8CA539001B5ADA /* Properties.m in Sources */,
 				A49084341B9FFC9E00578242 /* IngredientListViewController.m in Sources */,
+				A4A755621BB543770068F4A3 /* BarSearchTableViewController.m in Sources */,
 				A44AF96A1B9F115B000979DA /* RecipeViewController.m in Sources */,
 				A490843A1B9FFE1400578242 /* Ingredient.m in Sources */,
 				A45226831B86DFEE00FB5377 /* ConnectionHelper.m in Sources */,
@@ -382,6 +393,7 @@
 				A497B6C01B367450007CD7A2 /* SpiritSearchViewCell.m in Sources */,
 				A48B3A091B35C1FE00A3D554 /* SpiritSearchTableViewController.m in Sources */,
 				A4365EA21B35122300BE1822 /* main.m in Sources */,
+				A4A7555C1BB541410068F4A3 /* BarListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
