@@ -75,6 +75,7 @@
     }
     
     destViewController.ingredientList = filteredIngredientList;
+    destViewController.inclusive = NO;
 }
 
 @end

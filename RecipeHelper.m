@@ -67,9 +67,17 @@
     }];
 }
 
--(void)getRecipesForIngredient:(NSArray *)ingredientList completion:(void (^)(NSArray *, NSError *))completion {
+-(void)getRecipesForIngredient:(NSArray *)ingredientList inclusive:(BOOL)inclusive completion:(void (^)(NSArray *, NSError *))completion {
     NSString* queryString = self.properties[@"query-label"];
-    NSString* queryAnd = self.properties[@"query-and-delim"];
+    
+    // Set whether search should be inclusive or exclusive
+    NSString* queryDelim = @"";
+    if(inclusive) {
+        queryDelim = self.properties[@"query-or-delim"];
+    }
+    else {
+        queryDelim = self.properties[@"query-and-delim"];
+    }
     
     // When there are spaces, query only works with quotes around string
     NSMutableArray* quotedIngredientList = [[NSMutableArray alloc] initWithCapacity:[ingredientList count]];
@@ -78,7 +86,7 @@
         [quotedIngredientList addObject:[NSString stringWithFormat:quotes,ingredient]];
     }
     
-    queryString = [queryString stringByAppendingString:[quotedIngredientList componentsJoinedByString:queryAnd]];
+    queryString = [queryString stringByAppendingString:[quotedIngredientList componentsJoinedByString:queryDelim]];
     [self getRecipesForQuery:queryString completion:^(NSArray * recipes, NSError * error) {
         completion(recipes,error);
     }];

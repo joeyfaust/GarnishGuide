@@ -11,5 +11,6 @@
 @interface IngredientSearchTableViewController : UITableViewController
 
 @property (nonatomic,strong) NSArray* ingredientList;
+@property (nonatomic) BOOL inclusive;
 
 @end

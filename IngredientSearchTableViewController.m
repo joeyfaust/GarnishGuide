@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     self.helper = [[RecipeHelper alloc] initWithConfigs];
-    [self.helper getRecipesForIngredient:self.ingredientList completion:^(NSArray * recipes, NSError * error) {
+    [self.helper getRecipesForIngredient:self.ingredientList inclusive:self.inclusive completion:^(NSArray * recipes, NSError * error) {
         self.recipeList = recipes;
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];

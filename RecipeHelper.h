@@ -22,5 +22,5 @@
 -(void) loadRecipeImage:(Recipe*) recipe;
 -(void) getLatestRecipe:(void(^)(Recipe*,NSError*)) completion;
 -(void) getAllRecipesForSpirit:(Spirit*) spirit completion:(void(^)(NSArray*,NSError*)) completion;
--(void) getRecipesForIngredient:(NSArray*) ingredientList completion:(void(^)(NSArray*,NSError*)) completion;
+-(void) getRecipesForIngredient:(NSArray*) ingredientList inclusive:(BOOL)inclusive completion:(void(^)(NSArray*,NSError*)) completion;
 @end

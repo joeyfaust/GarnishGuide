@@ -9,7 +9,7 @@
 #import "BarListViewController.h"
 #import "IngredientHelper.h"
 #import "IngredientListViewCell.h"
-#import "BarSearchTableViewController.h"
+#import "IngredientSearchTableViewController.h"
 
 @interface BarListViewController () <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate>
 
@@ -85,7 +85,7 @@
 #pragma mark - Navigation
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    BarSearchTableViewController* destViewController = [segue destinationViewController];
+    IngredientSearchTableViewController* destViewController = [segue destinationViewController];
     
     NSMutableArray* filteredIngredientList = [[NSMutableArray alloc] init];
     for (Ingredient* ingredient in self.ingredientList) {
@@ -98,6 +98,7 @@
     [NSKeyedArchiver archiveRootObject:filteredIngredientList toFile:self.libraryPath];
     
     destViewController.ingredientList = filteredIngredientList;
+    destViewController.inclusive = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated {

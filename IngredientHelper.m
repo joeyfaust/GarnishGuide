@@ -32,10 +32,16 @@
     NSMutableArray* labels = [[NSMutableArray alloc] init];
     
     [self getIngredientPageRecursive:labels pageToken:nil completion:^(NSArray * resultLabels, NSError * error) {
+        
+        // Remove blacklist items
+        NSArray* blacklist = self.properties[@"blacklist"];
+        
         NSMutableArray* ingredientList = [[NSMutableArray alloc] initWithCapacity:[resultLabels count]];
         for(NSString* label in resultLabels) {
-            Ingredient* ingredient = [[Ingredient alloc] initWithName:label];
-            [ingredientList addObject:ingredient];
+            if(![blacklist containsObject:label]) {
+                Ingredient* ingredient = [[Ingredient alloc] initWithName:label];
+                [ingredientList addObject:ingredient];
+            }
         }
         
         // Order alphabetically

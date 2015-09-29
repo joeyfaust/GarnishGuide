@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HW1-7a-mgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="-996"/>
+            <point key="canvasLocation" x="12" y="-1008"/>
         </scene>
         <!--Spirit List-->
         <scene sceneID="f3e-hH-l3f">
@@ -109,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3s-TF-zYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="341"/>
+            <point key="canvasLocation" x="1503" y="-1008"/>
         </scene>
         <!--Ingredient Search-->
         <scene sceneID="RAw-8r-FJe">
@@ -153,11 +153,11 @@
                             <outlet property="delegate" destination="Giq-Nd-RXm" id="xzm-PE-e6U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Search Results" id="Wdt-Hw-bpq" userLabel="Search Results"/>
+                    <navigationItem key="navigationItem" title="Drink Possibilities" id="Wdt-Hw-bpq" userLabel="Drink Possibilities"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnO-2C-7f0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="1017"/>
+            <point key="canvasLocation" x="1503" y="387"/>
         </scene>
         <!--Spirit Search-->
         <scene sceneID="7Qv-ub-3YB">
@@ -205,7 +205,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QM6-WO-KbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2161" y="341"/>
+            <point key="canvasLocation" x="2177" y="-1008"/>
         </scene>
         <!--Recipe-->
         <scene sceneID="3t9-va-Fww">
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hp5-JY-4gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2882" y="716"/>
+            <point key="canvasLocation" x="2177" y="387"/>
         </scene>
         <!--My Bar-->
         <scene sceneID="c6v-He-9em">
@@ -311,6 +311,9 @@
                                         <state key="normal" title="List Drinks">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Giq-Nd-RXm" kind="show" id="wdE-1J-Mmh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVU-os-M7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1520" y="-388"/>
+            <point key="canvasLocation" x="1503" y="-320"/>
         </scene>
         <!--My Bar Navigation Controller-->
         <scene sceneID="ySc-kF-JgG">
@@ -359,7 +362,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAi-KN-CzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-388"/>
+            <point key="canvasLocation" x="858" y="-325"/>
         </scene>
         <!--Spirit Navigation Controller-->
         <scene sceneID="T1G-xu-0Mv">
@@ -376,7 +379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qie-Yf-Q1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="341"/>
+            <point key="canvasLocation" x="858" y="-1008"/>
         </scene>
         <!--Ingredients Navigation Controller-->
         <scene sceneID="v3d-at-vmT">
@@ -393,7 +396,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehb-lp-tol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="837"/>
+            <point key="canvasLocation" x="12" y="387"/>
         </scene>
         <!--Pick Ingredients-->
         <scene sceneID="zDd-ja-HqS">
@@ -485,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4V-TD-9yG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="995"/>
+            <point key="canvasLocation" x="858" y="379"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -510,6 +513,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Wjk-ql-tj2"/>
         <segue reference="Aij-H6-rKF"/>
     </inferredMetricsTieBreakers>
 </document>

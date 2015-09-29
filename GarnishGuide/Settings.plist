@@ -63,5 +63,17 @@
 			<string>http://i.imgur.com/3FEkYkV.png</string>
 		</dict>
 	</array>
+	<key>blacklist</key>
+	<array>
+		<string>Bar School</string>
+		<string>Basic Bar</string>
+		<string>Bottle Buy</string>
+		<string>Bottle Buys</string>
+		<string>Brunch</string>
+		<string>Entertaining</string>
+		<string>Food</string>
+		<string>Guides</string>
+		<string>Mixology Monday</string>
+	</array>
 </dict>
 </plist>
